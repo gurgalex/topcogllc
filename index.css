@@ -65,10 +65,14 @@ nav {
 
 .game {
   color: white;
+  text-align: left;
   display: grid;
+  grid-auto-rows: auto 1fr;
+  grid-auto-columns: 1fr;
+  align-items: start;
   grid-template-areas:
         "logo title"
-        "logo title"
+        "logo info"
         ". info"
         ". info"
         ". store"
@@ -87,6 +91,8 @@ nav {
 
   .appLogo {
     float: none!important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .app-store-links {
@@ -129,23 +135,30 @@ p {
 
 .appTitle {
   font-size: 175%;
+  align-self: start;
+  grid-area: title;
 }
-
 
 .appLogo {
   max-width: 100%;
   max-height: 100%;
   padding-right: 40px;
   grid-area: logo;
+  display: flex;
+  object-fit: contain;
+  width: 50%;
   float: right;
+
 }
 
 
 .appText {
+  align-self: start;
   font-size: 125%;
-  display: block;
   grid-area: info;
+  max-height: fit-content;
 }
+
 
 
 .app-store-links {
