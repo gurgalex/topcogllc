@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-class GameList extends React.Component {
-    render() {
-        const children = this.props.children
+const GameList = (props) => {
+        const children = props.children;
         return (
             <ul className="game-list">
                 {React.Children.map(children, (child, index) => {
@@ -17,7 +16,6 @@ class GameList extends React.Component {
                 })}
             </ul>
         )
-    }
 }
 
 export default GameList;

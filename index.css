@@ -205,3 +205,10 @@ hr {
   margin: 0;
 }
 
+h3 {
+  font-size: 175%;
+  padding-top: 0.75em;
+  text-align: center;
+  font-weight: bold;
+}
+

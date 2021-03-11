@@ -8,7 +8,12 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {IconButton} from "@material-ui/core";
 
-const useStyles = theme => makeStyles({
+const useStyles = makeStyles({
+    card: {
+        paddingBottom: "0.5em",
+        maxWidth: "100vw",
+        margin: "auto",
+    },
     root: {
         maxWidth: 345,
         maxHeight: 200,
@@ -23,20 +28,20 @@ const useStyles = theme => makeStyles({
 
 
 const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => {
-    const classes = useStyles;
+    const classes = useStyles();
     const alt_logo_text = `${title} logo`;
     const alt_appstore_text = `Download ${title} on App Store`
     const alt_playstore_text = `Download ${title} on Google Play`
 
     return (
-        <Card className={useStyles.root}>
+        <Card className={classes.card}>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    alt={`${title} logo`}
+                    alt={alt_logo_text}
                     image={logo}
                     title={title}
-                    style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat', margin: "auto", height: 128, maxWidth: "50%", objectFit: "cover", marginTop: "1.6em"}}
+                    style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat', margin: "auto", height: 128, maxWidth: "50%", objectFit: "cover", marginTop: "3em"}}
 
                 />
                 <CardContent>
@@ -48,6 +53,7 @@ const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => 
                     </Typography>
                 </CardContent>
             </CardActionArea>
+            <h3>Available on</h3>
             <CardActions>
                 {playStoreLink && <IconButton aria-label={alt_playstore_text }>
                     <div className="store-btn">
@@ -68,11 +74,9 @@ const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => 
                 </div>
                 </IconButton>
                 }
-
-
             </CardActions>
         </Card>
     );
 };
 
-export default withStyles(useStyles(), { withTheme: true })(GameCard);
+export default GameCard;
