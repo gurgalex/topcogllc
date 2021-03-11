@@ -13,6 +13,7 @@ const useStyles = theme => makeStyles({
         maxWidth: 345,
         maxHeight: 200,
         margin: "auto",
+        justifyContent: "center",
     },
     media: {           // this is the`className` passed to `CardMedia` later
         // height: "128",     // as an example I am modifying width and height
@@ -39,16 +40,16 @@ const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => 
 
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h3" component="h2" align="center">
                         {title}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
+                    <Typography variant="h5" color="textSecondary" component="p" align="center">
                         {description}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                {playStoreLink && <IconButton aria-label={alt_playstore_text}>
+                {playStoreLink && <IconButton aria-label={alt_playstore_text }>
                     <div className="store-btn">
                         <a href={playStoreLink} target="_blank" rel="noopener">
                             <img className="google-badge" alt={alt_playstore_text}

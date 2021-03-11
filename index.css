@@ -55,6 +55,8 @@ nav {
 .game-list {
   background-color: darkcyan;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -124,7 +126,6 @@ p {
 .game-list > ul, li {
   list-style: none;
   margin: 0;
-  padding: 2em 0 0;
 }
 
 .game {
@@ -180,13 +181,27 @@ img {
 }
 
 .store-btn {
-  width: 300px;
-  float: left;
+  width: 300px!important;
 }
+
+.google-badge {
+  width: 300px;
+}
+
+
 
 .apple-badge {
   padding: 6%;
   width: 88%;
   box-sizing: border-box;
+}
+
+
+.MuiCardActions-root {
+  justify-content: center;
+}
+
+hr {
+  margin: 0;
 }
 
