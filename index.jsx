@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Header from "./Header";
 import GameList from "./GameList";
-import Game from "./Game";
 import ReactDOM from "react-dom";
 import Footer from "./Footer";
-import {gamesData} from "./app_descriptions.js";
 import GameCard from "./GameCard";
+
+import {gamesData} from "./app_descriptions.js";
 
 
 
