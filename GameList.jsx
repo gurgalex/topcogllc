@@ -5,13 +5,13 @@ class GameList extends React.Component {
         const children = this.props.children
         return (
             <ul className="game-list">
-                {React.Children.map(children, (child, i) => {
+                {React.Children.map(children, (child, index) => {
                     return (
                         <>
                             <li>
                             {child}
-                            </li>
                             <hr />
+                            </li>
                         </>
                     );
                 })}

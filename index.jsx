@@ -5,6 +5,9 @@ import Game from "./Game";
 import ReactDOM from "react-dom";
 import Footer from "./Footer";
 import {gamesData} from "./app_descriptions.js";
+import GameCard from "./GameCard";
+
+
 
 const Home = () => {
     return (
@@ -12,7 +15,8 @@ const Home = () => {
             <Header />
             <GameList>
                     {gamesData.map(game => {
-                            return <Game
+                            return <GameCard
+                                key={game.title}
                                 title={game.title}
                                 logo={game.logo}
                                 description={game.description}
