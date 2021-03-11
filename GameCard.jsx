@@ -36,7 +36,7 @@ const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => 
                     alt={`${title} logo`}
                     image={logo}
                     title={title}
-                    style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat', margin: "auto", height: 128, maxWidth: "50%", objectFit: "cover"}}
+                    style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat', margin: "auto", height: 128, maxWidth: "50%", objectFit: "cover", marginTop: "1.6em"}}
 
                 />
                 <CardContent>
