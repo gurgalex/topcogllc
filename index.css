@@ -115,9 +115,7 @@ nav {
 
 
 .game-list li {
-  background-image: url("./assets/grimrpg-overlay-yt-blur.png");
-  background-size: cover;
-  margin-right: auto;
+  background-color: darkslategray;
   overflow: auto;
   min-height: 10vh;
   display: list-item;
