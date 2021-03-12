@@ -186,8 +186,21 @@ img {
   width: 300px!important;
 }
 
+@media only screen and (max-width: 960px) {
+  .store-btn {
+    width: 200px!important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .store-btn {
+    width: 150px!important;
+  }
+}
+
+
 .google-badge {
-  width: 300px;
+  width: 100%;
 }
 
 
