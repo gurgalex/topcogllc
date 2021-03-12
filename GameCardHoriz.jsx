@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         padding: "0!important",
         overflow: "auto",
-        backdropFilter: "blur(2em)",
         backgroundColor: "transparent",
         [theme.breakpoints.up('md')]: {
             display: 'flex',
