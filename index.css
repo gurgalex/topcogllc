@@ -17,7 +17,14 @@ footer {
   background-color: #1A1A1A;
   color: white;
   text-align: center;
-  padding: 1em 0;
+  padding-top: 0.5em;
+}
+
+footer > p {
+  font-size: 0.5em;
+  width: 100%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 h1 {
