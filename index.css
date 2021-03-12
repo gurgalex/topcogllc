@@ -169,14 +169,8 @@ p {
   max-height: fit-content;
 }
 
-
-
 .app-store-links {
   grid-area: store;
-}
-
-h3 {
-  margin: 0;
 }
 
 .app-store-links img {
@@ -190,27 +184,12 @@ img {
 }
 
 .store-btn {
-  width: 300px!important;
+  width: 225px!important;
 }
-
-@media only screen and (max-width: 960px) {
-  .store-btn {
-    width: 200px!important;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .store-btn {
-    width: 150px!important;
-  }
-}
-
 
 .google-badge {
   width: 100%;
 }
-
-
 
 .apple-badge {
   padding: 6%;
@@ -218,18 +197,7 @@ img {
   box-sizing: border-box;
 }
 
-
-.MuiCardActions-root {
-  justify-content: center;
-}
-
 hr {
   margin: 0;
-}
-
-h3 {
-  font-size: 175%;
-  padding-top: 0.75em;
-  font-weight: bold;
 }
 
