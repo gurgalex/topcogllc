@@ -13,6 +13,10 @@ const Home = () => {
     return (
         <>
             <Header />
+            <h1 >TopCog Indie Game Studio</h1>
+            <p style={{marginTop: 0}} id="company-desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</p>
+            <h2 id="games-header">Our Games ▼</h2>
+            <hr />
             <GameList>
                     {gamesData.map(game => {
                             return <GameCardHoriz

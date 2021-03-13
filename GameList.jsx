@@ -9,8 +9,8 @@ const GameList = (props) => {
                         <>
                             <li>
                             {child}
-                            <hr />
                             </li>
+                            <hr />
                         </>
                     );
                 })}

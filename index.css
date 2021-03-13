@@ -4,6 +4,8 @@
 
 header {
   width: 100%;
+  background-color: #1A1A1A;
+
 }
 
 body {
@@ -29,33 +31,45 @@ footer > p {
 
 h1 {
   text-align: center;
-  color: white;
-  background-color: #1A1A1A;
-  padding: 0;
-  margin: 0;
+  font-size: 175%;
+}
+
+#company-desc {
+  text-align: center;
 }
 
 nav {
+  width: 100%;
   justify-content: center;
-  background-color: #1A1A1A;
+  align-items: center;
   display: flex;
   flex-direction: row;
+  height: auto;
+}
+
+#logo {
+  margin-right: 32px;
 }
 
 .nav-link {
-  margin: 1em;
+  margin: 1rem 1.75rem;
   color: white;
   justify-content: center;
   text-align: center;
   text-decoration: none;
   font-size: 24px;
+  font-weight: bold;
   display: flex;
 }
 
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   nav {
     flex-direction: column;
   }
+}
+
+#logo {
+  margin: auto;
 }
 
 
@@ -86,6 +100,18 @@ nav {
         ". store"
 
 }
+
+
+#logo {
+  width: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 50%;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .game {
@@ -181,6 +207,12 @@ img {
   height: 100%;
 }
 
+#games-header {
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  font-weight: bold;
+}
+
 .store-btn {
   width: 225px!important;
 }
@@ -197,5 +229,6 @@ img {
 
 hr {
   margin: 0;
+  background: lightgray;
 }
 
