@@ -1,17 +1,20 @@
 import * as React from 'react';
-import ReactDOM from 'react-dom';
 
 const Header = () => {
+    const activeLinkProps = {
+        "aria-current": "page",
+    };
+
     return (
         <>
             <header>
                 <div id="logo">
-                    <img width="100%" src={"./assets/topcog-logos/TLOGO-large-blue-whitespace-removed.png"} />
+                    <img width="238" height="100" src={"./assets/topcog-logos/TLOGO-100height-blue.png"} />
                 </div>
             <nav>
-                <a className="nav-link" href="index.html">Home</a>
+                <a {...(window.location.pathname === "/" ? activeLinkProps : {})} className="nav-link" href="./">Home</a>
                 <a className="nav-link" href="https://discord.gg/s8q4hZR" target="_blank">Discord</a>
-                <a className="nav-link" href="newsletter.html">Newsletter</a>
+                <a {...(window.location.pathname === "/newsletter" ? activeLinkProps : {})} className="nav-link" href="./newsletter">Newsletter</a>
             </nav>
             </header>
         </>

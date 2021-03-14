@@ -1,9 +1,9 @@
 import * as React from 'react';
 import ReactDOM from "react-dom";
+
 import Header from "./Header";
 import GameList from "./GameList";
 import Footer from "./Footer";
-import GameCard from "./GameCard";
 import GameCardHoriz from "./GameCardHoriz";
 
 import {gamesData} from "./app_descriptions.js";
@@ -28,14 +28,11 @@ const Home = () => {
                                 playStoreLink={game.playStoreLink}
                             />
                         })}
-
-
             </GameList>
-
             <Footer />
         </>
     )
 }
-ReactDOM.render(<Home />, document.body);
+ReactDOM.render(<Home />, document.getElementById('root'));
 
 export default Home
