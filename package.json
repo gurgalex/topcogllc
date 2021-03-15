@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "preact build --template src/template.html --prerenderUrls src/prerender-urls.json",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
@@ -9,6 +9,9 @@
     "snowpack": "^3.0.13"
   },
   "dependencies": {
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.16",
+    "preact-router": "^3.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }

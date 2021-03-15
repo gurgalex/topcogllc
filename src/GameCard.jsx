@@ -59,7 +59,7 @@ const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => 
                     <div className="store-btn">
                         <a href={playStoreLink} target="_blank" rel="noopener">
                             <img className="google-badge" alt={alt_playstore_text}
-                                 src="./assets/google-play-badge.png"/>
+                                 src="../assets/google-play-badge.png"/>
                         </a>
                     </div>
                 </IconButton>
@@ -69,7 +69,7 @@ const GameCard = ({title, logo, description, appleStoreLink, playStoreLink}) => 
                 <div className="store-btn">
                     <a href={appleStoreLink} target="_blank" rel="noopener">
                         <img className="apple-badge" alt={alt_appstore_text}
-                             src="./assets/Apple-download-on-the-app-store-badge.png" />
+                             src="../assets/Apple-download-on-the-app-store-badge.png" />
                     </a>
                 </div>
                 </IconButton>

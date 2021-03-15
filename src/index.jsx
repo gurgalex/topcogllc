@@ -1,5 +1,4 @@
-import * as React from 'react';
-import ReactDOM from "react-dom";
+import './style';
 
 import Header from "./Header";
 import GameList from "./GameList";
@@ -33,6 +32,5 @@ const Home = () => {
         </>
     )
 }
-ReactDOM.render(<Home />, document.getElementById('root'));
 
 export default Home
