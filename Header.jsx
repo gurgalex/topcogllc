@@ -9,7 +9,7 @@ const Header = () => {
         <>
             <header>
                 <div id="logo">
-                    <img width="238" height="100" src={"./assets/topcog-logos/TLOGO-100height-blue.png"}  alt="TopCog Logo"/>
+                    <img width="238" height="100" src={"./assets/topcog-logos/TLOGO-100height-blue.webp"}  alt="TopCog Logo"/>
                 </div>
             <nav>
                 <a {...(window.location.pathname === "/" ? activeLinkProps : {})} className="nav-link" href="./">Home</a>

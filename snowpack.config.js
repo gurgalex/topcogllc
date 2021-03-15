@@ -13,6 +13,12 @@ module.exports = {
   optimize: {
     /* Example: Bundle your final build: */
     // "bundle": true,
+    bundle: false,
+    minify: true,
+    target: 'es2020',
+	  preload: true,
+	  treeshake: true,
+	  sourcemap: false,
   },
   packageOptions: {
     /* ... */
