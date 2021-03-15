@@ -72,6 +72,11 @@ nav {
   color: darkblue;
 }
 
+.active {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+
 nav [aria-current=page] {
   text-decoration: underline;
   text-underline-offset: 0.4em;
