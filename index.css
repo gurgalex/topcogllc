@@ -88,6 +88,93 @@ nav [aria-current=page] {
 }
 
 
+.game-logo {
+  height: 256px;
+  width: auto;
+  margin-top: 5vh;
+}
+
+@media screen and (min-width: 960px) {
+  .game-logo {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .game-logo {
+    height: 128px;
+    text-align: center;
+    margin: 7vh auto auto auto;
+  }
+}
+
+
+.title {
+  color: white;
+  font-size: 175%;
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 960px) {
+  .title {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.controls {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+  .controls {
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+.content {
+  flex: 1 1 auto;
+  color: white;
+  padding: 0!important;
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    text-align: center;
+  }
+}
+
+
+ .details {
+   color: white;
+   display: flex;
+   padding: 0!important;
+   flex-direction: column;
+ }
+
+@media screen and (max-width: 960px) {
+  .details {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.download {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.4em;
+}
+
+
 .game-list {
   height: 100%;
   margin: 0;
@@ -100,22 +187,24 @@ nav [aria-current=page] {
   width: 100%;
 }
 
-.game {
-  color: white;
-  text-align: left;
-  display: grid;
-  grid-auto-rows: auto 1fr;
-  grid-auto-columns: 1fr;
-  align-items: start;
-  grid-template-areas:
-        "logo title"
-        "logo info"
-        ". info"
-        ". info"
-        ". store"
 
+.game {
+  overflow: auto;
+  background-color: transparent;
+  padding: 0 0 0.5em 0;
+  max-width: 70em;
+  width: 70%;
+  margin: auto;
+  height: auto;
+  display: flex;
 }
 
+@media screen and (max-width: 960px) {
+  .game {
+    width: 90%;
+    flex-direction: column;
+  }
+}
 
 #logo {
   width: 15%;
@@ -128,26 +217,6 @@ nav [aria-current=page] {
 }
 
 
-@media screen and (max-width: 768px) {
-  .game {
-    text-align: left;
-    grid-template-areas:
-    "logo"
-    "title"
-    "info"
-    "store"
-  }
-
-  .appLogo {
-    float: none!important;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .app-store-links {
-    text-align: left;
-  }
-}
 
 
 .app-store-links a {
@@ -174,12 +243,6 @@ p {
 .game-list > ul, li {
   list-style: none;
   margin: 0;
-}
-
-.game {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 75vw;
 }
 
 .appTitle {

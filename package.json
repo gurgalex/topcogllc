@@ -6,12 +6,10 @@
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^4.2.0",
-    "snowpack": "^3.0.1"
+    "snowpack": "^3.0.13"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-dom": "^17.0.1"
   }
 }
