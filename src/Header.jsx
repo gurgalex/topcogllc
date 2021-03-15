@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'preact-router/match';
 
 const Header = () => {
     const activeLinkProps = {
@@ -9,12 +10,12 @@ const Header = () => {
         <>
             <header>
                 <div id="logo">
-                    <img width="238" height="100" src={"./assets/topcog-logos/TLOGO-100height-blue.webp"}  alt="TopCog Logo"/>
+                    <img width="238" height="100" src={"./assets/topcog-logos/TLOGO-250height-blue.webp"}  alt="TopCog Logo"/>
                 </div>
             <nav>
-                <a {...(window.location.pathname === "/" ? activeLinkProps : {})} className="nav-link" href="./">Home</a>
+                <Link class="nav-link" activeClassName="active" href="/">Home</Link>
                 <a className="nav-link" href="https://discord.gg/s8q4hZR" target="_blank" rel="noopener">Discord</a>
-                <a {...(window.location.pathname === "/newsletter" ? activeLinkProps : {})} className="nav-link" href="./newsletter">Newsletter</a>
+                <Link class="nav-link" activeClassName="active" href="/newsletter">Newsletter</Link>
             </nav>
             </header>
         </>
