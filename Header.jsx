@@ -13,7 +13,7 @@ const Header = () => {
                 </div>
             <nav>
                 <a {...(window.location.pathname === "/" ? activeLinkProps : {})} className="nav-link" href="./">Home</a>
-                <a className="nav-link" href="https://discord.gg/s8q4hZR" target="_blank">Discord</a>
+                <a className="nav-link" href="https://discord.gg/s8q4hZR" target="_blank" rel="noopener">Discord</a>
                 <a {...(window.location.pathname === "/newsletter" ? activeLinkProps : {})} className="nav-link" href="./newsletter">Newsletter</a>
             </nav>
             </header>
