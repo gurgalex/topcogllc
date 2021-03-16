@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <header>
                 <div id="logo">
-                    <img width="238" height="100" src={"./assets/topcog-logos/TLOGO-250height-blue.webp"}  alt="TopCog Logo"/>
+                    <img width="1615" height="500" src={"./assets/topcog-logos/TClogo-trimmed-500h.webp"}  alt="TopCog Logo"/>
                 </div>
             <nav>
                 <Link class="nav-link" activeClassName="active" href="/">Home</Link>
