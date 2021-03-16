@@ -82,6 +82,7 @@ nav [aria-current=page] {
 @media only screen and (max-width: 360px) {
   nav {
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -204,9 +205,9 @@ nav [aria-current=page] {
 }
 
 #logo {
-  width: 25%;
+  width: 39%;
   text-align: center;
-  margin: auto;
+  margin: 1em auto 1em auto;
 }
 
 @media screen and (max-width: 768px) {
