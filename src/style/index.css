@@ -39,8 +39,9 @@ h1 {
 }
 
 nav {
+  background-color: darkslategray;
+  width: fit-content;
   margin: auto;
-  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -60,7 +61,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: skyblue;
+  color: yellow;
 }
 
 .nav-link:focus {
