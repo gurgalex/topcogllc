@@ -48,10 +48,6 @@ nav {
   height: auto;
 }
 
-#logo {
-  margin-right: 32px;
-}
-
 .nav-link {
   padding: 1em 1.75em;
   color: white;
@@ -87,11 +83,6 @@ nav [aria-current=page] {
     flex-direction: column;
   }
 }
-
-#logo {
-  margin: auto;
-}
-
 
 .game-logo {
   height: 256px;
@@ -212,7 +203,9 @@ nav [aria-current=page] {
 }
 
 #logo {
-  width: 15%;
+  width: 25%;
+  text-align: center;
+  margin: auto;
 }
 
 @media screen and (max-width: 768px) {
