@@ -2,6 +2,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "preact build --template src/template.html --prerenderUrls src/prerender-urls.json",
+    "deploy": "preact build --template src/template.html --prerenderUrls src/prerender-urls.json && firebase hosting:channel:deploy site-preview",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
